@@ -27,6 +27,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 body {
@@ -51,7 +52,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -416,10 +417,12 @@ body {
 }
 
 .team__container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .team__title {
@@ -438,6 +441,8 @@ body {
   justify-content: space-around;
   gap: 30px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .team__members {

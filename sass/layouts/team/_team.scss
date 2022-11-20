@@ -4,10 +4,13 @@
     padding-bottom: 94px;
   }
   .team__container{
-      width: 1200px;
+      width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
   }
    .team__title {
     font-weight: 700;
@@ -17,6 +20,7 @@
   color: var(--h-color);
   white-space: nowrap;
   margin-bottom: 50px;
+
   }
     .team__list {
     list-style: none;
@@ -24,6 +28,8 @@
         justify-content: space-around;
         gap: 30px;
         display: flex;
+        flex-direction: column;
+        align-items: center;
   }
   .team__members{
   background-color: var(--background-header);
