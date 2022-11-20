@@ -2,12 +2,7 @@
      .features{
   padding: 94px 0;
   }
-.features__container{
-   width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
+
  .specialty{
   font-style: normal;
   font-size: 14px;
@@ -17,10 +12,16 @@
   color: var(--h-color);
   margin-top: 30px;
   margin-bottom: 10px;
+   display: flex;
+     flex-wrap: wrap;
+  text-align: center;
+
   }
   .specialty__list{
     list-style: none; 
-    display: flex; 
+    display: flex;
+     flex-wrap: wrap;
+     gap: 30px;
   }
    .specialty__list :last-child{
     margin: 0;
@@ -31,6 +32,12 @@
       margin-right: 30px;
     }
 */
+.specialty__item{
+  @media screen and (min-width: 768px){
+     width: calc((100% - 30px) / 2);
+     text-align: start;
+  }
+}
    .specialty__item::before{
     content:"" ;
     height: 120px;
