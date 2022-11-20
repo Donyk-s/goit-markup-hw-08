@@ -1,0 +1,24 @@
+  .modal-close{
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  color: #000000;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: color var(--new-timing-function) var(--timing-function),
+   background-color var(--new-timing-function) var(--timing-function);
+   &:hover,
+  &:focus{
+color: var(--hover-color);
+  }
+}
+.modal-close-icon{
+  fill: currentColor;
+}

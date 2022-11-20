@@ -1,0 +1,28 @@
+
+.portfol-over-top{
+    position: relative; 
+    overflow: hidden;
+    
+  }
+
+  .portfol-over{
+font-weight: 400;
+font-size: 18px;
+line-height: 1.55;
+color: var(--background-header);
+background: rgba(33, 150, 243, 0.9);
+position: absolute;
+top: 0;
+padding-top: 63px;
+padding-right: 24px;
+padding-left: 24px;
+padding-bottom: 63px;
+height: 100%;
+transform: translateY(100%);
+transition: transform var(--new-timing-function) var(--timing-function);
+overflow: auto;
+.portfol-list :hover &{
+transform: translateY(0);
+
+}
+}

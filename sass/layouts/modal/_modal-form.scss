@@ -1,0 +1,102 @@
+.modal-title{
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+margin-bottom: 12px;
+}
+
+.form-feedback{
+  display: flex;
+  flex-direction: column;
+
+}
+.input-name{
+border-radius: 4px;
+ display: block;
+
+}
+.input-wrap{
+  
+  position: relative;
+  margin-bottom: 10px;
+}
+.client-name{
+  margin-bottom: 4px;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: var(--p-color);
+display: block; 
+}
+
+.client-name-txt{
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+width: 100%;
+height: 40px;
+padding-left: 42px;
+transition: border-color var(--new-timing-function) var(--timing-function);
+outline: transparent;
+&:hover,
+&:focus{
+  border-color: var(--hover-color);
+}
+}
+
+.icon-person{
+position: absolute;
+left: 15px;
+top: 50%;
+transform: translateY(-50%);
+.client-name-txt:focus +&,
+.client-name-txt:hover +&{
+  fill: var(--hover-color);
+}
+} 
+
+.phone-number{
+ padding-bottom: 4px;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: var(--p-color); 
+display: block;
+}
+.user-tel{
+border: 1px solid rgba(33, 33, 33, 0.2);
+ border-radius: 4px;
+ width: 100%;
+height: 40px;
+padding-left: 42px;
+transition: border-color var(--new-timing-function) var(--timing-function);
+outline: transparent;
+&:focus +.icon-person,
+&:hover +.icon-person{
+  fill: var(--hover-color);
+}
+}
+
+.user-email{
+  margin-bottom: 4px;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: var(--p-color);
+display: block;
+ 
+}
+.user-post{
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+width: 100%;
+height: 40px;
+padding-left: 42px;
+transition: border-color var(--new-timing-function) var(--timing-function);
+outline: transparent;
+&:hover,
+&:focus{
+ border-color: var(--hover-color); 
+}
+}
+

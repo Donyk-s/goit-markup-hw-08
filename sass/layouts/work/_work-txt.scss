@@ -1,0 +1,26 @@
+.work__pick-txt{
+    position: absolute;
+    background: rgba(47, 48, 58, 0.8);
+width: 370px;
+    display: flex;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+justify-content: space-around;
+padding-top: 24px;
+padding-bottom: 24px;
+color: #FFFFFF;
+bottom: 0;
+  }
+
+  .work__title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--h-color);
+  margin-bottom: 50px;
+  }

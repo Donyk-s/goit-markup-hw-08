@@ -1,0 +1,38 @@
+.contacts-footer{
+    background-color: var(--hero-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .contacts-list{
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction:column ;
+       & :hover,
+  & :focus{
+    color: var(--hover-color);
+  }              
+  }
+  .contacts-list :last-child{
+    margin-bottom: 0;
+  }
+  .list-link{
+    margin-bottom: 9px;  
+  }
+  .contacts-plane{
+  text-decoration: none;
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--background-header);
+  display: block;
+  transition: color var(--new-timing-function) var(--timing-function);  
+  }
+  .mail-footer,
+  .tel-footer{
+    color: var(--mail-tel);
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1.71;
+    box-sizing: border-box;
+    transition: color var(--new-timing-function) var(--timing-function); 
+  }

@@ -1,0 +1,80 @@
+.footer-input{
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--background-header);
+margin-bottom: 20px;
+ }
+
+ .sign-email{
+  width: 358px;
+display: flex;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 16px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: transparent;
+color: var(--background-header);
+ }
+.sign-email::placeholder{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+align-items: center;
+color: rgba(255, 255, 255, 0.6);
+
+}
+.container-input{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-left: 93px;
+
+
+}
+.sign-btn{
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: var(--background-header);
+background-color: var(--hover-color);
+border-radius: 4px;
+display: flex;
+border-color: transparent;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+padding-left: 28px;
+cursor: pointer;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 28px;
+padding-right:28px ;
+transition:  color var(--new-timing-function) var(--timing-function),
+background-color var(--new-timing-function) var(--timing-function);
+&:hover,
+&:focus{
+color: var(--hover-color);
+background-color: var(--background-header);  
+}
+}
+
+.plain{
+  fill: var(--background-header);
+  margin-left: 10px;
+  .sign-btn:hover &,
+.sign-btn:focus &{
+fill: currentColor ;
+}
+}
+.sign-flex{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

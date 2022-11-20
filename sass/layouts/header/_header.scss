@@ -1,0 +1,57 @@
+
+  .header{
+    border-bottom: 1px solid #ECECEC;
+  } 
+
+  .header__container{
+    display: flex;
+    align-items: center; 
+  }
+    .nav{
+    display: flex;
+    align-items: center;
+  }
+  .nav__list{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-left: 94px;
+  }
+
+  .nav__link{
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--h-color);
+  text-decoration: none;
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  position: relative;
+transition: color var(--new-timing-function) var(--timing-function);
+     &:hover,
+     &:focus{
+    color: var(--hover-color);
+  }
+  }
+  .current{
+    color: var(--hover-color);
+  }
+
+  /*------варіант 1 підкреслення -----*/
+  
+  .current::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px; ;
+    border-radius: 2px;
+    background-color: var(--hover-color);
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    opacity: 0;
+  }
+ .current::after{
+  opacity: 1;
+}

@@ -1,0 +1,17 @@
+
+  .special{
+    display: flex;
+  }
+   .oll-portfol{
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .portfol-list{
+  flex-basis: calc((100% - 60px) / 3);
+  }
+  .potfol{
+    list-style: none;
+    flex-wrap: wrap;
+  gap: 30px; 
+  margin-top: 50px;
+  }

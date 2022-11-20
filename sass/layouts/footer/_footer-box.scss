@@ -1,0 +1,31 @@
+
+  .footer-box{
+    display: flex;
+  flex-wrap: wrap;
+ flex-direction: column; 
+  }
+   .contacts-test{
+    display: flex;
+     flex-wrap: wrap;
+ flex-direction: column; 
+ margin-left: 70px;
+ 
+  }
+   .footer-flex{
+    display: flex;
+    align-items: baseline;
+  }
+  
+  
+  .footer-p{
+    display: block;
+    text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--background-header);
+  margin-bottom: 20px;
+
+  }
