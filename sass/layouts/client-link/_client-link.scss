@@ -13,12 +13,29 @@
   .client-item{
     list-style: none;
     display: flex;
+  
+      @media screen and (min-width: 320px){
+    /*width: calc((100% - 30px) / 2);*/
+    /* flex-direction: column;*/
     gap: 30px;
+    
   }
+    @media screen and (min-width: 420px){
+    width: calc((100% - 30px) / 3);
+    display: flex;
+     flex-wrap: wrap; 
+  }
+  }
+
   .client-list{
-    width: calc((100% - 150px) / 6);
+   /* width: calc((100% - 150px) / 6);*/
     height: 92px;
+       @media screen and (min-width: 420px){
+    display: flex;
+     flex-wrap: wrap; 
   }
+  }
+  
   .client-link{
     display: block;
     width: 100%;
@@ -40,7 +57,6 @@
   }
   .client-lis-icon{
     fill:currentColor;
-  
   }
  
   

@@ -1,6 +1,18 @@
 
      .features{
   padding: 94px 0;
+      @media screen and (min-width: 480px){
+padding-top: 60px;
+padding-bottom: 60px;
+}
+      @media screen and (min-width: 768px){
+padding-top: 60px;
+padding-bottom: 60px;
+}
+ @media screen and (min-width: 1200px){
+    padding-top: 94px;
+ padding-bottom: 118px;
+  }
   }
 
  .specialty{
@@ -12,9 +24,21 @@
   color: var(--h-color);
   margin-top: 30px;
   margin-bottom: 10px;
-   display: flex;
-     flex-wrap: wrap;
-  text-align: center;
+  display: flex;
+  
+  
+
+    @media screen and (min-width: 480px){
+  justify-content: space-around;
+}
+  @media screen and (min-width: 768px){
+  justify-content: flex-start;
+  }
+   @media screen and (min-width: 1200px){
+     justify-content: flex-start;
+ 
+  }
+  
 
   }
   .specialty__list{
@@ -22,6 +46,11 @@
     display: flex;
      flex-wrap: wrap;
      gap: 30px;
+      @media screen  and (min-width: 1200px){
+      margin-right: 30px;
+      flex-wrap: nowrap;
+    
+  }
   }
    .specialty__list :last-child{
     margin: 0;
@@ -34,8 +63,13 @@
 */
 .specialty__item{
   @media screen and (min-width: 768px){
-     width: calc((100% - 30px) / 2);
-     text-align: start;
+     width: calc((100% - 30px) / 2); 
+  }
+  @media screen  and (min-width: 1200px){
+    width: calc((100% - 90px) / 4);
+      margin-right: 30px;
+      flex-wrap: nowrap;
+    
   }
 }
    .specialty__item::before{
@@ -71,4 +105,11 @@
   line-height: 1.7;
   color: var(--p-color);
   margin-top: 10px;
+   @media screen and (min-width: 480px){
+  text-align: start;
+}
+  @media screen and (min-width: 768px){
+    text-align: start;
+    
+  }
   }
