@@ -323,7 +323,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .specialty__list {
-    margin-right: 30px;
+    /* margin-right: 30px;*/
     flex-wrap: nowrap;
   }
 }
@@ -491,8 +491,8 @@ body {
 
 .team {
   background-color: var(--team-background);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 @media screen and (min-width: 480px) {
   .team {
@@ -585,6 +585,24 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (min-width: 480px) {
+  .client {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .client {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .client-title {
   font-size: 36px;
@@ -597,30 +615,28 @@ body {
 .client-item {
   list-style: none;
   display: flex;
-}
-@media screen and (min-width: 320px) {
-  .client-item {
-    /*width: calc((100% - 30px) / 2);*/
-    /* flex-direction: column;*/
-    gap: 30px;
-  }
-}
-@media screen and (min-width: 420px) {
-  .client-item {
-    width: calc((100% - 30px) / 3);
-    display: flex;
-    flex-wrap: wrap;
-  }
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .client-list {
   /* width: calc((100% - 150px) / 6);*/
   height: 92px;
+  width: 100%;
 }
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 480px) {
   .client-list {
-    display: flex;
-    flex-wrap: wrap;
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .client-list {
+    width: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-list {
+    width: calc((100% - 150px) / 6);
   }
 }
 
@@ -757,6 +773,11 @@ body {
   display: flex;
   align-items: baseline;
 }
+@media screen and (min-width: 480px) {
+  .footer-flex {
+    flex-direction: column;
+  }
+}
 
 .footer-p {
   display: block;
@@ -863,6 +884,11 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+@media screen and (min-width: 480px) {
+  .sign-flex {
+    flex-direction: column;
+  }
 }
 
 .backdrop {
