@@ -5,11 +5,15 @@ font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
 color: var(--background-header);
+letter-spacing: 0.03em;
 margin-bottom: 20px;
- }
+
+
+}
 
  .sign-email{
-  width: 358px;
+  
+  width: 100%;
 display: flex;
 padding-top: 15px;
 padding-bottom: 15px;
@@ -33,8 +37,14 @@ color: rgba(255, 255, 255, 0.6);
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  margin-left: 93px;
-
+  align-items: center;
+flex-direction: column;
+width: 100%;
+  /*margin-left: 93px;**/
+     /*  @media screen and (min-width: 480px){
+align-items: center;
+flex-direction: column;
+  } */
 
 }
 .sign-btn{
@@ -76,8 +86,13 @@ fill: currentColor ;
 .sign-flex{
   display: flex;
   align-items: center;
-  gap: 12px;
-       @media screen and (min-width: 480px){
-  flex-direction: column;
-  }
+  gap: 20px;
+  flex-wrap: wrap;
+flex-direction: column;
+width: 100%;
+     /*  @media screen and (min-width: 480px){
+align-items: center;
+flex-wrap: wrap;
+flex-direction: column;
+  } */
 }

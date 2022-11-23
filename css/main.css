@@ -672,6 +672,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  text-align: center;
+  margin-bottom: 12px;
+  /*  @media screen and (min-width: 480px){
+  align-items: center;
+    } */
 }
 .contacts-list :hover, .contacts-list :focus {
   color: var(--hover-color);
@@ -713,7 +718,7 @@ body {
   line-height: 1.2;
   display: block;
   width: 145px;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   display: flex;
 }
 
@@ -760,23 +765,29 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
+  /*  @media screen and (min-width: 480px){
+  align-items: center; 
+    } */
 }
 
 .contacts-test {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-left: 70px;
+  text-align: center;
+  /* @media screen and (min-width: 480px){
+  text-align: center;  
+   }*/
 }
 
 .footer-flex {
+  width: 100%;
   display: flex;
-  align-items: baseline;
-}
-@media screen and (min-width: 480px) {
-  .footer-flex {
-    flex-direction: column;
-  }
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  justify-content: space-between;
 }
 
 .footer-p {
@@ -798,11 +809,12 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--background-header);
+  letter-spacing: 0.03em;
   margin-bottom: 20px;
 }
 
 .sign-email {
-  width: 358px;
+  width: 100%;
   display: flex;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -843,7 +855,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  margin-left: 93px;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  /*margin-left: 93px;**/
+  /*  @media screen and (min-width: 480px){
+  align-items: center;
+  flex-direction: column;
+    } */
 }
 
 .sign-btn {
@@ -883,12 +902,15 @@ body {
 .sign-flex {
   display: flex;
   align-items: center;
-  gap: 12px;
-}
-@media screen and (min-width: 480px) {
-  .sign-flex {
-    flex-direction: column;
-  }
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  /*  @media screen and (min-width: 480px){
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+    } */
 }
 
 .backdrop {
