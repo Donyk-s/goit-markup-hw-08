@@ -674,12 +674,14 @@ body {
   flex-direction: column;
   text-align: center;
   margin-bottom: 12px;
-  /*  @media screen and (min-width: 480px){
-  align-items: center;
-    } */
 }
 .contacts-list :hover, .contacts-list :focus {
   color: var(--hover-color);
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    text-align: left;
+  }
 }
 
 .contacts-list :last-child {
@@ -789,6 +791,43 @@ body {
   gap: 60px;
   justify-content: space-between;
 }
+@media screen and (min-width: 1200px) {
+  .footer-flex {
+    gap: 94px;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+  }
+}
+
+.footer-up {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 480px) {
+  .footer-up {
+    gap: 60px;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-up {
+    display: flex;
+    gap: 165px;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-up {
+    display: flex;
+    gap: 94px;
+    align-items: baseline;
+  }
+}
 
 .footer-p {
   display: block;
@@ -815,6 +854,7 @@ body {
 
 .sign-email {
   width: 100%;
+  min-width: 280px;
   display: flex;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -825,6 +865,11 @@ body {
   border-radius: 4px;
   background-color: transparent;
   color: var(--background-header);
+}
+@media screen and (min-width: 1200px) {
+  .sign-email {
+    min-width: 358px;
+  }
 }
 
 .sign-email::-moz-placeholder {
@@ -858,11 +903,11 @@ body {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  /*margin-left: 93px;**/
-  /*  @media screen and (min-width: 480px){
-  align-items: center;
-  flex-direction: column;
-    } */
+}
+@media screen and (min-width: 1200px) {
+  .container-input {
+    align-items: flex-start;
+  }
 }
 
 .sign-btn {
@@ -906,11 +951,18 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
-  /*  @media screen and (min-width: 480px){
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-    } */
+}
+@media screen and (min-width: 768px) {
+  .sign-flex {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sign-flex {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 12px;
+  }
 }
 
 .backdrop {

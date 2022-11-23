@@ -8,12 +8,11 @@ color: var(--background-header);
 letter-spacing: 0.03em;
 margin-bottom: 20px;
 
-
 }
 
  .sign-email{
-  
   width: 100%;
+  min-width: 280px;
 display: flex;
 padding-top: 15px;
 padding-bottom: 15px;
@@ -24,6 +23,9 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 background-color: transparent;
 color: var(--background-header);
+ @media screen and (min-width: 1200px){
+min-width: 358px;
+}
  }
 .sign-email::placeholder{
 font-weight: 400;
@@ -40,12 +42,10 @@ color: rgba(255, 255, 255, 0.6);
   align-items: center;
 flex-direction: column;
 width: 100%;
-  /*margin-left: 93px;**/
-     /*  @media screen and (min-width: 480px){
-align-items: center;
-flex-direction: column;
-  } */
+ @media screen and (min-width: 1200px){
 
+align-items: flex-start
+}
 }
 .sign-btn{
 font-weight: 700;
@@ -90,9 +90,13 @@ fill: currentColor ;
   flex-wrap: wrap;
 flex-direction: column;
 width: 100%;
-     /*  @media screen and (min-width: 480px){
-align-items: center;
-flex-wrap: wrap;
-flex-direction: column;
-  } */
+@media screen and (min-width: 768px){
+    max-width: 450px;
+}
+@media screen and (min-width: 1200px){
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 12px;  
+}
+
 }
