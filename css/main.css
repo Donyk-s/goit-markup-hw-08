@@ -216,13 +216,6 @@ body {
   background-color: #C4C4C4;
 }
 
-.hero__container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
 .overlay {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("..//images/fon.jpg");
   max-width: 1600px;
@@ -245,6 +238,23 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
+    letter-spacing: 0.06em;
+    box-sizing: border-box;
+    width: 360;
+    text-align: center;
+    padding-top: 118px;
+    padding-right: 60px;
+    padding-bottom: 118px;
+    padding-left: 60px;
+  }
 }
 
 .hero__button {

@@ -10,4 +10,19 @@
   box-sizing: border-box;
   margin: 0 auto;
   margin-bottom: 30px;
+     @media screen and (min-width: 480px){
+  font-style: normal;
+font-weight: 900;
+font-size: 26px;
+line-height: 1.61;
+text-align: center;
+letter-spacing: 0.06em;
+ box-sizing: border-box;
+ width: 360;
+ text-align: center;
+ padding-top: 118px;
+ padding-right: 60px;
+ padding-bottom: 118px;
+ padding-left: 60px;
+}
   }
