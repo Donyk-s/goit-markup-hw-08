@@ -38,6 +38,14 @@ body {
   background-color: var(--background-header);
 }
 
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
 :root {
   --hover-color: #2196F3;
   --h-color: #212121;
@@ -71,6 +79,12 @@ body {
   .container {
     max-width: 1200px;
   }
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .visually-hidden {
@@ -159,7 +173,7 @@ body {
   transition-timing-function: var(--timing-function);
 }
 .menu-open:hover, .menu-open:focus {
-  fill: var(--hover color);
+  fill: var(--hover-color);
 }
 @media screen and (min-width: 768px) {
   .menu-open {
@@ -173,7 +187,7 @@ body {
   z-index: 2;
   width: 100vw;
   height: 100vh;
-  background-color: white;
+  background-color: var(--background-header);
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
@@ -193,11 +207,25 @@ body {
   border: none;
   cursor: pointer;
   transition-property: background-color, fill;
-  transition-duration: var(-new-timing-function);
+  transition-duration: var(--new-timing-function);
   transition-timing-function: var(--timing-function);
 }
 .menu-close:hover, .menu-close:focus {
   fill: var(--hover-color);
+}
+
+.mobile-menu__btn {
+  fill: currentColor;
+}
+
+.mobil-menu__list {
+  list-style: none;
+  text-decoration: none;
+}
+
+.mob-menu-item {
+  list-style: none;
+  text-decoration: none;
 }
 
 .mob-menu-item:not(:last-child) {
@@ -205,31 +233,37 @@ body {
 }
 
 .mobil-menu-link {
+  list-style: none;
+  text-decoration: none;
+  list-style: none;
+  text-decoration: none;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--h-color);
   transition-property: background-color, fill;
-  transition-duration: var(-new-timing-function);
+  transition-duration: var(--new-timing-function);
   transition-timing-function: var(--timing-function);
 }
 .mobil-menu-link:hover, .mobil-menu-link:focus {
   color: var(--hover-color);
 }
 
-.mobil-top {
+.mobil-up {
   margin-bottom: 32px;
 }
 
 .mobil-contact__tel {
+  list-style: none;
+  text-decoration: none;
   font-weight: 500;
   font-size: 27px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: var(--accent-color);
+  color: var(--hover-color);
   transition-property: background-color, fill;
-  transition-duration: var(-new-timing-function);
+  transition-duration: var(--new-timing-function);
   transition-timing-function: var(--timing-function);
 }
 .mobil-contact__tel:hover, .mobil-contact__tel:focus {
@@ -274,7 +308,7 @@ body {
   font-size: 14px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: var(--accent-color);
+  color: var(--hover-color);
   padding: 10px;
 }
 @media screen and (min-width: 480px) {
@@ -300,6 +334,14 @@ body {
   line-height: 1.2;
   display: inline-block;
   width: 145px;
+  justify-content: flex-start;
+  margin-right: 87px;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+    padding: 24px 0;
+  }
 }
 
 .contact__header {
@@ -308,6 +350,13 @@ body {
   display: flex;
   margin-left: auto;
   gap: 50px;
+  /* @media screen and (min-width: 768px) {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 10px;
+     padding: 21px 0;
+   }*/
 }
 
 .contacts__mail {
@@ -351,6 +400,7 @@ body {
 }
 
 .hero {
+  position: relative;
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -1135,6 +1185,12 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--new-timing-function) var(--timing-function);
   transform-origin: top left;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    max-width: 450px;
+    min-height: 609px;
+  }
 }
 
 .backdrop.is-hidden .modal {

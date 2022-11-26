@@ -11,7 +11,7 @@
   transition-timing-function: var(--timing-function);
   &:hover,
   &:focus {
-    fill: var(--hover color);
+    fill: var(--hover-color);
   }
  @include tablet {
 display: none;
@@ -24,13 +24,14 @@ display: none;
   z-index: 2;
   width: 100vw;
   height: 100vh;
-  background-color: white;
+  background-color: var(--background-header);
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
 }
+
 
 .menu-close {
   position: absolute;
@@ -45,7 +46,7 @@ display: none;
   border: none;
   cursor: pointer;
   transition-property: background-color, fill;
- transition-duration: var(-new-timing-function);
+ transition-duration: var(--new-timing-function);
   transition-timing-function: var(--timing-function);
   &:hover,
   &:focus {
@@ -53,18 +54,34 @@ display: none;
   }
 }
 
+.mobile-menu__btn{
+  fill: currentColor;
+ 
+}
 
+.mobil-menu__list{
+   list-style: none;
+   text-decoration: none;
+}
+.mob-menu-item{
+  list-style: none;
+   text-decoration: none;
+}
 .mob-menu-item:not(:last-child) {
   margin-bottom: 32px;
 }
 .mobil-menu-link {
+   list-style: none;
+   text-decoration: none;
+   list-style: none;
+   text-decoration: none;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--h-color);
   transition-property: background-color, fill;
- transition-duration: var(-new-timing-function);
+ transition-duration: var(--new-timing-function);
   transition-timing-function: var(--timing-function);
   &:hover,
   &:focus {
@@ -72,16 +89,18 @@ display: none;
   }
 }
 
-.mobil-top{margin-bottom: 32px;}
+.mobil-up{margin-bottom: 32px;}
 
 .mobil-contact__tel {
+   list-style: none;
+   text-decoration: none;
   font-weight: 500;
   font-size: 27px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: var(--accent-color);
+  color: var(--hover-color);
   transition-property: background-color, fill;
-transition-duration: var(-new-timing-function);
+transition-duration: var(--new-timing-function);
   transition-timing-function: var(--timing-function);
   &:hover,
   &:focus {
@@ -117,7 +136,7 @@ transition-duration: var(-new-timing-function);
   font-size: 14px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: var(--accent-color);
+  color: var(--hover-color);
   padding: 10px;
   @include mobile{font-weight: 500;
     font-size: 18px;

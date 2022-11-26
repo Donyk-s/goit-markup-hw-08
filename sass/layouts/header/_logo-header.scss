@@ -14,4 +14,11 @@
   line-height: 1.2;
   display: inline-block;
     width: 145px;
+      justify-content: flex-start;
+  margin-right: 87px;
+    @include desktop {
+    margin-right: 93px;
+    padding: 24px 0;
+  }
+   
   }
