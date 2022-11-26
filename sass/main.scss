@@ -1,8 +1,10 @@
 @import './base/reset';
 @import './utils/variables';
 @import './base/container';
+@import './utils/mixins';
 @import './utils/hidden';
 @import './layouts/header/header';
+@import './layouts/header/menu_open';
 @import './layouts/header/logo-header';
 @import './layouts/header/contact-header';
 @import './layouts/hero/hero-section';

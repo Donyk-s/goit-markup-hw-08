@@ -146,6 +146,147 @@ body {
   opacity: 1;
 }
 
+.menu-open {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition-property: background-color, fill;
+  transition-duration: var(-new-timing-function);
+  transition-timing-function: var(--timing-function);
+}
+.menu-open:hover, .menu-open:focus {
+  fill: var(--hover color);
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
+
+.mobil-menu {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.menu-close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition-property: background-color, fill;
+  transition-duration: var(-new-timing-function);
+  transition-timing-function: var(--timing-function);
+}
+.menu-close:hover, .menu-close:focus {
+  fill: var(--hover-color);
+}
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobil-menu-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--h-color);
+  transition-property: background-color, fill;
+  transition-duration: var(-new-timing-function);
+  transition-timing-function: var(--timing-function);
+}
+.mobil-menu-link:hover, .mobil-menu-link:focus {
+  color: var(--hover-color);
+}
+
+.mobil-top {
+  margin-bottom: 32px;
+}
+
+.mobil-contact__tel {
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  transition-property: background-color, fill;
+  transition-duration: var(-new-timing-function);
+  transition-timing-function: var(--timing-function);
+}
+.mobil-contact__tel:hover, .mobil-contact__tel:focus {
+  color: var(--button-servise);
+}
+@media screen and (min-width: 480px) {
+  .mobil-contact__tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
+
+.mobil-contact__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--p-color);
+}
+
+.mobil-contact-tel {
+  margin-bottom: 32px;
+}
+
+.mobil-soc {
+  display: flex;
+  margin-top: 64px;
+}
+
+.mobil-soc-item {
+  width: 100%;
+}
+
+.mobil-soc-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobil-soc-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  padding: 10px;
+}
+@media screen and (min-width: 480px) {
+  .mobil-soc-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    padding: 10px;
+  }
+}
+
 .logo__part {
   color: #000000;
 }
@@ -210,10 +351,17 @@ body {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  margin: 0 auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-color: #C4C4C4;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .overlay {
@@ -227,33 +375,23 @@ body {
 }
 
 .hero__title {
-  font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-header);
-  width: 696px;
-  box-sizing: border-box;
+  max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
-    font-style: normal;
     font-weight: 900;
-    font-size: 26px;
-    line-height: 1.61;
-    text-align: center;
-    letter-spacing: 0.06em;
-    box-sizing: border-box;
-    width: 360;
-    text-align: center;
-    padding-top: 118px;
-    padding-right: 60px;
-    padding-bottom: 118px;
-    padding-left: 60px;
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
   }
 }
 
