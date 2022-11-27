@@ -3,13 +3,25 @@
     border-bottom: 1px solid #ECECEC;
   } 
 
-  .header__container{
+.header__container {
     display: flex;
-    align-items: center; 
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+@media screen and (min-width: 480px) {
+    max-width: 480px;
+}
+@media screen and (min-width: 768px) {
+    max-width: 768px;
+}
+   /* @media screen and (max-width: 768px) {
+position: relative;
+  }*/
   }
     .nav{
     display: flex;
     align-items: center;
+
   }
   .nav__list{
     list-style: none;

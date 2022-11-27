@@ -6,7 +6,12 @@
    background-color: transparent;
   border: none;
   cursor: pointer;
-   transition-property: background-color, fill;
+  color: var(--h-color);
+  /*position: absolute;
+  top: 0px;
+  right:22px;*/
+ 
+   transition-property: background-color;
   transition-duration: var(--new-timing-function);
   transition-timing-function: var(--timing-function);
   &:hover,
@@ -16,6 +21,13 @@
  @include tablet {
 display: none;
  }
+}
+.mob-menu__btn-open{
+  fill: currentColor;
+}
+.mobile-menu__btn{
+  fill: currentColor;
+ 
 }
 
 .mobil-menu {
@@ -54,10 +66,7 @@ display: none;
   }
 }
 
-.mobile-menu__btn{
-  fill: currentColor;
- 
-}
+
 
 .mobil-menu__list{
    list-style: none;
