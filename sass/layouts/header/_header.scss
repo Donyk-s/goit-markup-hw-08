@@ -15,7 +15,22 @@
     list-style: none;
     display: flex;
     gap: 50px;
-    margin-left: 94px;
+    /*margin-left: 94px;*/
+    @media screen and (min-width: 480px) {
+
+  }
+@media screen and (min-width: 768px) {
+  gap: 50px;
+  margin-left: 88px;
+   
+  }
+@media screen and (min-width: 1200px) {
+  gap: 50px;
+  margin-left: 94px;
+  }
+  @media screen and (max-width: 768px) {
+  display: none; 
+  }
   }
 
   .nav__link{

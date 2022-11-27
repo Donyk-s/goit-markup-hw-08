@@ -15,10 +15,13 @@
   display: inline-block;
     width: 145px;
       justify-content: flex-start;
-  margin-right: 87px;
+  /*margin-right: 87px;*/
     @include desktop {
-    margin-right: 93px;
+   /* margin-right: 93px;*/
     padding: 24px 0;
+  }
+  @include tablet{
+    margin-left: 0;
   }
    
   }
