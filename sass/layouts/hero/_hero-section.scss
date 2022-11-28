@@ -12,15 +12,43 @@
   }
 
   .overlay{
-    background-image: linear-gradient(
+  /* background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-    url("..//images/fon.jpg");
+    url("..//images/fon.jpg");*/
     max-width: 1600px;
     background-size: cover;
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
+  @include mobile{
+     background-image: var(--gradient),
+    url("..//images/headermob.jpg");
+  }
+  @include retina{
+    background-image: var(--gradient),
+    url(..//images/header-mob-2x.jpg)
+
+  }
+  @include tablet{
+    background-image: var(--gradient),
+    url("..//images/headertab.jpg");
+  }
+    @include retina{
+    background-image: var(--gradient),
+    url(..//images/header-tab-2x.jpg);
+
+  }
+  @include desktop{
+     background-image: var(--gradient),
+    url("..//images/fon.jpg");
+  }
+      @include retina{
+    background-image: var(--gradient),
+    url(..//images/header-tab-2x.jpg);
+padding-top: 118px;
+    padding-bottom: 118px;
+  }
   }
