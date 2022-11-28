@@ -1,13 +1,14 @@
-  .contacts{
-   /* list-style: none;
-  font-weight: 500;
+  .contact__header{
+   list-style: none;
+    display: none;
+  /*font-weight: 500;
   display: flex;
   margin-left: auto;
-  gap: 50px;
+  gap: 50px;*/
    & :hover,
   & :focus{
     color: var(--hover-color);
-  }*/
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -15,13 +16,21 @@
     gap: 10px;
     padding: 21px;
   }
-      @media screen and (min-width: 768px) {
+      @media screen and (max-width: 768px) {
   display: none; 
   }
+  @media screen and (min-width: 1200px) {
+      display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: flex-end;
+    padding: 0 0;
+    margin-left: auto;
+}
   }
 
 
-  .mail{
+  .contacts__mail{
     list-style: none;
     color: var(--p-color);
     text-decoration: none;
@@ -50,22 +59,22 @@
   }
     
   
-  .tel{
-  color: var(--p-color);
-    text-decoration: none;
-    font-style: normal;
-    line-height: 1.14;
-    align-items: center;
-    /*padding-top: 32px;
-    padding-bottom: 32px;*/
-    display: flex;
+  .contacts__tel{
+ 
     transition: color var(--new-timing-function) var(--timing-function);
         @media screen and (min-width: 768px) {
     padding: 0px;
   } 
   
 @media screen and (min-width: 1200px) {
-   padding-top: 32px;
+    color: var(--p-color);
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1.14;
+    align-items: center;
+   padding: 0px;
+    display: flex;
+    padding-top: 32px;
     padding-bottom: 32px;
   }
 
