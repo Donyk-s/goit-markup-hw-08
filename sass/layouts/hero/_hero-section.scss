@@ -26,29 +26,33 @@
   @include mobile{
      background-image: var(--gradient),
     url("..//images/headermob.jpg");
-  }
-  @include retina{
+      @include retina{
     background-image: var(--gradient),
     url(..//images/header-mob-2x.jpg)
 
   }
+  }
+
   @include tablet{
     background-image: var(--gradient),
     url("..//images/headertab.jpg");
-  }
-    @include retina{
+      @include retina{
     background-image: var(--gradient),
     url(..//images/header-tab-2x.jpg);
 
   }
+  }
+  
   @include desktop{
      background-image: var(--gradient),
     url("..//images/fon.jpg");
-  }
+     padding-top: 200px;
+    padding-bottom: 200px;
       @include retina{
     background-image: var(--gradient),
     url(..//images/hero-2x.jpg);
-    padding-top: 200px;
-    padding-bottom: 200px;
+   
   }
+  }
+    
   }
