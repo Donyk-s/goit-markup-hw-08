@@ -149,7 +149,7 @@
                      <div class="work__pick-tumb">
                         <p class="work__pick-txt">Десктопні додатки</p>
                     <img
-                    srcset="./images/oldpc.jpg 1x, ./images/oldps-2x.jpg 2x"
+                    srcset="./images/oldpc.jpg 1x, ./images/oldps-2x .jpg 2x"
                      src="./images/oldpc.jpg" 
                     alt="білий монітор та клавіатура на столі" width="370">
                    
@@ -168,6 +168,7 @@
                     <div class="work__pick-tumb">
                         <p class="work__pick-txt">Дизайнерські рішення</p>
                     <img 
+                    srcset="./images/tablet.jpg 1x, ./images/tablet-2x.jpg 2x"
                     src="./images/tablet.jpg"
                     alt="рука тримає включений планшет" width="370">
                     </div>
@@ -186,8 +187,22 @@
            
             <ul class="team__list">
                 <li class="team__members">
-                    <img src="./images/productdesigner.jpg" 
+                    <picture>
+                        <source 
+                        srcset="./images/productdesigner.jpg 1x,
+                        ./images/productdesigner-2x.jpg"
+                        media="(min-width: 1200px)"/>
+                       <source 
+                       srcset="./images/productdesigner-tab.jpg 1x,
+                       ./images/productdesigner-tab-2x.jpg 2x"
+                       media="(min-width: 768px)"/>
+                        <source 
+                        srcset=""
+                        media="(min-width: 480px)"/>
+                        <img src="./images/productdesigner.jpg" 
                     alt="Фото пофіль Ігор Дем'яненко" width="270">
+                    </picture>
+                    
                     <div class="retreat">
                     <h3 class="team__name">Ігор Дем'яненко</h3>
                     <p lang="en" class="team__position">Product Designer</p>
