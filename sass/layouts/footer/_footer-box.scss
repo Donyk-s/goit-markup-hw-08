@@ -40,8 +40,15 @@ align-items: flex-start;
 
 }
 .footer-up{
+  gap: 60px;
   display: flex;
    flex-direction: column;
+     @media screen and (min-width: 320px){
+    gap: 60px;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: column;
+}
   @media screen and (min-width: 480px){
     gap: 60px;
     justify-content: space-between;
