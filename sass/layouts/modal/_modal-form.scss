@@ -75,6 +75,10 @@ outline: transparent;
 &:hover +.icon-person{
   fill: var(--hover-color);
 }
+&:hover,
+&:focus{
+  border-color: var(--hover-color);
+}
 }
 
 .user-email{
@@ -97,6 +101,10 @@ outline: transparent;
 &:hover,
 &:focus{
  border-color: var(--hover-color); 
+}
+&:focus +.icon-person,
+&:hover +.icon-person{
+  fill: var(--hover-color);
 }
 }
 

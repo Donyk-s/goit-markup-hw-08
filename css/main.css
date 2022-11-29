@@ -1613,6 +1613,9 @@ flex-direction:row;
 .user-tel:focus + .icon-person, .user-tel:hover + .icon-person {
   fill: var(--hover-color);
 }
+.user-tel:hover, .user-tel:focus {
+  border-color: var(--hover-color);
+}
 
 .user-email {
   margin-bottom: 4px;
@@ -1634,6 +1637,9 @@ flex-direction:row;
 }
 .user-post:hover, .user-post:focus {
   border-color: var(--hover-color);
+}
+.user-post:focus + .icon-person, .user-post:hover + .icon-person {
+  fill: var(--hover-color);
 }
 
 .link-input {
