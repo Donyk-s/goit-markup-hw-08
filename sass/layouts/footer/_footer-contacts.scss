@@ -14,12 +14,15 @@
   & :focus{
     color: var(--hover-color);
   } 
+  @include mobile{
+    margin-bottom: 0px;
+  }
     @media screen and (min-width: 1200px){
 text-align:  left;
   }            
   }
   .contacts-list :last-child{
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
   .list-link{
     margin-bottom: 9px;  
