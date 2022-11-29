@@ -1,8 +1,8 @@
   .contact__header{
    list-style: none;
     display: none;
-  /*font-weight: 500;
-  display: flex;
+  font-weight: 500;
+ /*display: flex;
   margin-left: auto;
   gap: 50px;*/
    & :hover,
@@ -14,7 +14,9 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    padding: 21px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin-left: 0 auto;
   }
       @media screen and (max-width: 768px) {
   display: none; 
@@ -36,7 +38,7 @@
     text-decoration: none;
     font-style: normal;
     line-height: 1.14;
-  
+   font-weight: 500;
    /*padding-top: 32px;
     padding-bottom: 32px;*/
     display: flex;
@@ -54,13 +56,23 @@
   .icon-envelope{
        height: 10px;
   fill: currentColor;
-  @include desktop{width: 14px;
-    height: 10px;}
+  @include desktop{
+    width: 16px;
+    height: 12px;
+  margin-right: 8px;}
+    @include tablet{
+  margin-right: 8px;}
   }
     
   
   .contacts__tel{
- 
+     font-weight: 500;
+  color: var(--p-color);
+    text-decoration: none;
+    list-style: none;
+    font-style: normal;
+    line-height: 1.14;
+    align-items: center;
     transition: color var(--new-timing-function) var(--timing-function);
         @media screen and (min-width: 768px) {
     padding: 0px;
@@ -81,12 +93,15 @@
   }
  
      .icon-smartphone{
-     height: 10px;
   fill: currentColor;
-  @include desktop{width: 10px;
-    height: 16px;}
-   
+  @include desktop{
+    width: 10px;
+    height: 16px;
+   margin-right: 8px;
   }
+     @include tablet{
+  margin-right: 8px;}
+}
   .contacts :hover,
   .contacts :focus{
     color: var(--hover-color);

@@ -114,9 +114,6 @@ body {
   max-width: 100%;
   justify-content: space-between;
   align-items: center;
-  /* @media screen and (max-width: 768px) {
-  position: relative;
-    }*/
 }
 @media screen and (min-width: 480px) {
   .header__container {
@@ -126,6 +123,11 @@ body {
 @media screen and (min-width: 768px) {
   .header__container {
     max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    max-width: 1200px;
   }
 }
 
@@ -204,16 +206,18 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: var(--h-color);
-  /* position: absolute;
-   top: 0px;
-   right:22px;*/
-  transition-property: background-color;
+  /*color: var(--h-color);*/
+  transition-property: fill, background-color;
   transition-duration: var(--new-timing-function);
   transition-timing-function: var(--timing-function);
 }
 .menu-open:hover, .menu-open:focus {
   fill: var(--hover-color);
+}
+@media screen and (min-width: 480px) {
+  .menu-open {
+    margin-left: 0 auto;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu-open {
@@ -223,6 +227,9 @@ body {
 
 .mob-menu__btn-open {
   fill: currentColor;
+}
+.mob-menu__btn-open:hover, .mob-menu__btn-open:focus {
+  fill: var(--hover-color);
 }
 
 .mobile-menu__btn {
@@ -396,10 +403,10 @@ body {
 .contact__header {
   list-style: none;
   display: none;
-  /*font-weight: 500;
-  display: flex;
-  margin-left: auto;
-  gap: 50px;*/
+  font-weight: 500;
+  /*display: flex;
+   margin-left: auto;
+   gap: 50px;*/
 }
 .contact__header :hover, .contact__header :focus {
   color: var(--hover-color);
@@ -410,7 +417,9 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    padding: 21px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin-left: 0 auto;
   }
 }
 @media screen and (max-width: 768px) {
@@ -435,6 +444,7 @@ body {
   text-decoration: none;
   font-style: normal;
   line-height: 1.14;
+  font-weight: 500;
   /*padding-top: 32px;
    padding-bottom: 32px;*/
   display: flex;
@@ -459,12 +469,25 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .icon-envelope {
-    width: 14px;
-    height: 10px;
+    width: 16px;
+    height: 12px;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .icon-envelope {
+    margin-right: 8px;
   }
 }
 
 .contacts__tel {
+  font-weight: 500;
+  color: var(--p-color);
+  text-decoration: none;
+  list-style: none;
+  font-style: normal;
+  line-height: 1.14;
+  align-items: center;
   transition: color var(--new-timing-function) var(--timing-function);
 }
 @media screen and (min-width: 768px) {
@@ -487,13 +510,18 @@ body {
 }
 
 .icon-smartphone {
-  height: 10px;
   fill: currentColor;
 }
 @media screen and (min-width: 1200px) {
   .icon-smartphone {
     width: 10px;
     height: 16px;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .icon-smartphone {
+    margin-right: 8px;
   }
 }
 
@@ -972,12 +1000,6 @@ flex-direction:row;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 100%;
-}
-@media screen and (min-width: 480px) {
-  .team__members {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 @media screen and (min-width: 768px) {
   .team__members {
