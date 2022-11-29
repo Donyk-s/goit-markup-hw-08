@@ -77,8 +77,11 @@ transition: color var(--new-timing-function) var(--timing-function);
     background-color: var(--hover-color);
     position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: -4px;
     opacity: 0;
+    @include desktop{
+ bottom: -1px;
+    }
   }
  .current::after{
   opacity: 1;
