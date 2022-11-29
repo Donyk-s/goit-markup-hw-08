@@ -79,6 +79,9 @@ transition: color var(--new-timing-function) var(--timing-function);
     left: 0;
     bottom: -4px;
     opacity: 0;
+    @include mobile{
+      display: none;
+    }
     @include desktop{
  bottom: -1px;
     }
