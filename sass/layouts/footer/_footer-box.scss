@@ -25,6 +25,7 @@ align-items: center;
     gap: 60px;
     justify-content: space-between;
       @media screen and (min-width: 1200px){
+        display: flex;
     gap: 94px;
     justify-content: space-between;
     align-items: baseline;
@@ -50,7 +51,6 @@ align-items: center;
 }
 @media screen and (min-width: 1200px){
     display: flex;
-    gap: 94px;
     align-items: baseline;
 }
 }

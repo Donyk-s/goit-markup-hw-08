@@ -13,15 +13,10 @@
   font-size: 26px;
   line-height: 1.2;
   display: inline-block;
-    width: 145px;
+   /* width: 145px;*/
       justify-content: flex-start;
   /*margin-right: 87px;*/
-    @include desktop {
-   /* margin-right: 93px;*/
-    padding: 24px 0;
-  }
   @include tablet{
     margin-left: 0;
   }
-   
   }

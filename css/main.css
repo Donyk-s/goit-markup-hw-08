@@ -384,15 +384,9 @@ body {
   font-size: 26px;
   line-height: 1.2;
   display: inline-block;
-  width: 145px;
+  /* width: 145px;*/
   justify-content: flex-start;
   /*margin-right: 87px;*/
-}
-@media screen and (min-width: 1200px) {
-  .logo {
-    /* margin-right: 93px;*/
-    padding: 24px 0;
-  }
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -1165,7 +1159,7 @@ flex-direction:row;
   font-size: 26px;
   line-height: 1.2;
   display: block;
-  width: 145px;
+  /* width: 145px;*/
   margin-bottom: 28px;
   display: flex;
   align-items: center;
@@ -1240,6 +1234,7 @@ flex-direction:row;
 }
 @media screen and (min-width: 1200px) {
   .footer-flex {
+    display: flex;
     gap: 94px;
     justify-content: space-between;
     align-items: baseline;
@@ -1271,7 +1266,6 @@ flex-direction:row;
 @media screen and (min-width: 1200px) {
   .footer-up {
     display: flex;
-    gap: 94px;
     align-items: baseline;
   }
 }
@@ -1349,7 +1343,7 @@ flex-direction:row;
   align-items: baseline;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  /*width: 100%;*/
 }
 @media screen and (min-width: 1200px) {
   .container-input {
@@ -1397,7 +1391,7 @@ flex-direction:row;
   gap: 20px;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 100%;
+  /*width: 100%;*/
 }
 @media screen and (min-width: 768px) {
   .sign-flex {
