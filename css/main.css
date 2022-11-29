@@ -1636,9 +1636,13 @@ flex-direction:row;
   align-items: center;
   fill: transparent;
   padding-left: 12px;
-  justify-content: center;
   margin-bottom: 30px;
   position: relative;
+}
+
+.check {
+  display: flex;
+  align-items: center;
 }
 
 .checkbox {
@@ -1660,9 +1664,10 @@ flex-direction:row;
   align-items: center;
   fill: transparent;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 9px;
+  left: 0;
+  /* top: 50%;
+   transform: translateY(-50%);
+   left: 9px;*/
 }
 .check-inp:checked + .check span {
   fill: var(--background-header);
@@ -1682,6 +1687,7 @@ flex-direction:row;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--p-color);
+  margin-left: 8px;
 }
 @media screen and (min-width: 1200px) {
   .check-txt {
