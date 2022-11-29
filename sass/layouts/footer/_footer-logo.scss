@@ -6,11 +6,16 @@
   font-size: 26px;
   line-height: 1.2;
   display:block;
-   /* width: 145px;*/
     margin-bottom: 28px;
     display: flex;
-  align-items: center
-  }
+  align-items: center;
+@media screen and (min-width: 480px){
+   font-size: 26px;
+  line-height: 1.2;
+  
+}
+}
+
  .logo-part-footer{
     color: var(--background-header);
   
