@@ -26,13 +26,14 @@
   @include mobile{
      background-image: var(--gradient),
     url("..//images/headermob.jpg");
+     }
       @include retina{
     background-image: var(--gradient),
     url(..//images/header-mob-2x.jpg)
-
   }
-  }
-
+ 
+ 
+  
   @include tablet{
     background-image: var(--gradient),
     url("..//images/headertab.jpg");
